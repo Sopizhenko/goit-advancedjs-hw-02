@@ -1,0 +1,124 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+}
+
+/* Timer */
+.timer-task {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timer {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.field .value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.field .label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+
+.flatpickr-input {
+  width: 280px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 7px 15px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+}
+
+.flatpickr-input:hover {
+  border-color: #000000;
+}
+
+.flatpickr-input.active {
+  border: 1px solid #4e75ff;
+  color: #000000;
+}
+
+.flatpickr-input:disabled {
+  cursor: not-allowed;
+}
+
+/* Button */
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+button:disabled {
+  background: #c1c1c1;
+  cursor: not-allowed;
+}
+
+.flatpickr-calendar {
+  background-color: #f5f5f5;
+  border: unset;
+  border-radius: 8px;
+}
+
+.flatpickr-calendar::before {
+  display: none;
+}
+
+.flatpickr-day.today {
+  background: transparent;
+  border-color: #4e75ff;
+  color: #666666;
+}
+
+.flatpickr-day.selected {
+  background: #4e75ff;
+  border: unset;
+  color: #fff;
+}
+
+.flatpickr-day:hover:not(.selected) {
+  background: #c1c1c1;
+}
+
+select.flatpickr-monthDropdown-months,
+.flatpickr-calendar.numInput {
+  font-weight: 600;
+}
